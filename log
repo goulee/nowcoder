@@ -1,0 +1,11 @@
+2023-07-30 11:57:30.637  INFO 11540 --- [main] com.nowcoder.community.LoggerTests       : Starting LoggerTests on goulee with PID 11540 (started by 33126 in C:\Users\33126\Desktop\nowcoder)
+2023-07-30 11:57:30.637 DEBUG 11540 --- [main] com.nowcoder.community.LoggerTests       : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2023-07-30 11:57:30.638  INFO 11540 --- [main] com.nowcoder.community.LoggerTests       : No active profile set, falling back to default profiles: default
+2023-07-30 11:57:32.033  INFO 11540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-30 11:57:32.225  INFO 11540 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-07-30 11:57:32.435  INFO 11540 --- [main] com.nowcoder.community.LoggerTests       : Started LoggerTests in 2.024 seconds (JVM running for 2.404)
+2023-07-30 11:57:32.779 DEBUG 11540 --- [main] com.nowcoder.community.LoggerTests       : debug log
+2023-07-30 11:57:32.780  INFO 11540 --- [main] com.nowcoder.community.LoggerTests       : info log
+2023-07-30 11:57:32.780  WARN 11540 --- [main] com.nowcoder.community.LoggerTests       : warn log
+2023-07-30 11:57:32.780 ERROR 11540 --- [main] com.nowcoder.community.LoggerTests       : error log
+2023-07-30 11:57:32.788  INFO 11540 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
