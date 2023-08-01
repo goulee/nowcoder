@@ -9,9 +9,9 @@ public class Page {
     private int current = 1;
     // 显示上限
     private int limit = 10;
-    // 数据总数（用于计算总页数）
+    // 数据总数(用于计算总页数)
     private int rows;
-    // 查询路径（用于复用分页链接）
+    // 查询路径(用于复用分页链接)
     private String path;
 
     public int getCurrent() {
@@ -19,7 +19,7 @@ public class Page {
     }
 
     public void setCurrent(int current) {
-        if(current >= 1) {
+        if (current >= 1) {
             this.current = current;
         }
     }
@@ -29,7 +29,7 @@ public class Page {
     }
 
     public void setLimit(int limit) {
-        if(limit >= 1 && limit <= 100) {
+        if (limit >= 1 && limit <= 100) {
             this.limit = limit;
         }
     }
@@ -39,7 +39,7 @@ public class Page {
     }
 
     public void setRows(int rows) {
-        if(rows >= 0) {
+        if (rows >= 0) {
             this.rows = rows;
         }
     }
@@ -69,7 +69,7 @@ public class Page {
      */
     public int getTotal() {
         // rows / limit [+1]
-        if(rows % limit == 0) {
+        if (rows % limit == 0) {
             return rows / limit;
         } else {
             return rows / limit + 1;
@@ -83,7 +83,7 @@ public class Page {
      */
     public int getFrom() {
         int from = current - 2;
-        return from < 1 ? 1 :from;
+        return from < 1 ? 1 : from;
     }
 
     /**
@@ -96,4 +96,5 @@ public class Page {
         int total = getTotal();
         return to > total ? total : to;
     }
+
 }

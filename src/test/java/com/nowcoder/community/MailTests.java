@@ -10,7 +10,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
@@ -24,7 +23,7 @@ public class MailTests {
 
     @Test
     public void testTextMail() {
-        mailClient.sendMail("3112818484@qq.com", "TEST", "你好");
+        mailClient.sendMail("lihonghe@nowcoder.com", "TEST", "Welcome.");
     }
 
     @Test
@@ -35,6 +34,7 @@ public class MailTests {
         String content = templateEngine.process("/mail/demo", context);
         System.out.println(content);
 
-        mailClient.sendMail("3112818484@qq.com", "HTML", content);
+        mailClient.sendMail("lihonghe@nowcoder.com", "HTML", content);
     }
+
 }

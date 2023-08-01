@@ -20,4 +20,5 @@ public class DiscussPostService {
     public int findDiscussPostRows(int userId) {
         return discussPostMapper.selectDiscussPostRows(userId);
     }
+
 }
